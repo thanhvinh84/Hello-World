@@ -161,5 +161,11 @@ button {
   .press-btn:hover {
     transform: scale(1.05);
   }
+  .my-name {
+    color: green;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
   
     

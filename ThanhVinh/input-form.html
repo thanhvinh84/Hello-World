@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Form</title>
+  <script defer src="scripts.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
+  <div class="container">
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="fname">First name</label>
+        <input type="text" id="fname" name="fname" value="John" />
+      </div>
 
-<h2>HTML Forms</h2>
+      <div class="form-group">
+        <label for="lname">Last name</label>
+        <input type="text" id="lname" name="lname" value="Doe" />
+      </div>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+      <p class="note">
+        If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+      </p>
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
+      <div class="button-group">
+        <input type="submit" value="Submit" class="submit-btn" />
+        <button type="button" class="press-btn" id="pressBtn">Press me!</button>
+      </div>
+      <div id="result"></div>
+    </form>
+  </div>
 </body>
 </html>
